@@ -13,7 +13,7 @@ APS supports two complementary policy authoring models. They can be mixed within
 | Model | Best for |
 |---|---|
 | **Rego** | Declarative rules, composable logic, OPA ecosystem compatibility |
-| **Programmatic** | Rules requiring external I/O, complex state, or typed business logic |
+| **Runtime** | Rules requiring external I/O, complex state, or typed business logic |
 
 ## 2. Rego Policies
 
@@ -49,9 +49,9 @@ decision := "deny" if { ... }
 
 The `input` document corresponds to the context object for each interception point. See [Core Concepts §4](core.md#4-data-model) for the full schema.
 
-## 3. Programmatic Rules
+## 3. Runtime Rules
 
-Programmatic rules implement a typed interface provided by the APS runtime SDK. They are registered alongside Rego policies and evaluated in the same pipeline.
+Runtime rules implement a typed interface provided by the APS runtime SDK. They are registered alongside Rego policies and evaluated in the same pipeline.
 
 ### 3.1 Java Interface (planned)
 
@@ -106,7 +106,7 @@ policy_set:
   input:
     - type: rego
       path: policies/no-ssn.rego
-    - type: programmatic
+    - type: runtime
       class: com.example.policies.ContentFilterPolicy   # Java
   tool_call:
     - type: rego
@@ -114,6 +114,6 @@ policy_set:
   output:
     - type: rego
       path: policies/no-blocked-domains.rego
-    - type: programmatic
+    - type: runtime
       class: RedactCreditCardPolicy                     # TypeScript
 ```

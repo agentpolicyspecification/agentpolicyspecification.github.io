@@ -53,7 +53,7 @@ decision := "allow" if {
 reason := sprintf("Tool '%v' is not in the approved tool list.", [input.tool_name])
 ```
 
-## 6. Example: Programmatic Rule (TypeScript)
+## 6. Example: Runtime Rule (TypeScript)
 
 Prevent file writes outside of a designated directory:
 

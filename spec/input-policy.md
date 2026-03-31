@@ -53,7 +53,7 @@ decision := "deny" if {
 reason := "Message contains a potential SSN."
 ```
 
-## 6. Example: Programmatic Rule (TypeScript)
+## 6. Example: Runtime Rule (TypeScript)
 
 ```typescript
 import { InputPolicy, InputContext, PolicyDecision } from "@aps/core";

@@ -54,7 +54,7 @@ decision := "deny" if {
 reason := "Response references a blocked domain."
 ```
 
-## 6. Example: Programmatic Rule (TypeScript)
+## 6. Example: Runtime Rule (TypeScript)
 
 Redact credit card numbers from model output:
 
