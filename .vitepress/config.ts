@@ -17,7 +17,7 @@ export default withMermaid(defineConfig({
   ],
 
   themeConfig: {
-    logo: "/logo.svg",
+    logo: { light: "/aps-logo-light.svg", dark: "/aps-logo-dark-nobg.svg" },
     siteTitle: "APS",
 
     nav: [

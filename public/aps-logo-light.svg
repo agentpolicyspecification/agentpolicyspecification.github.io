@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+    <linearGradient id="gradLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:0"/>
+      <stop offset="30%" style="stop-color:#93c5fd;stop-opacity:0.8"/>
+      <stop offset="70%" style="stop-color:#a5b4fc;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#a5b4fc;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outermost ring -->
+  <rect x="110" y="110" width="180" height="180" rx="9"
+        transform="rotate(45 200 200)"
+        fill="none" stroke="url(#grad)" stroke-width="5" opacity="0.2"/>
+
+  <!-- Middle ring -->
+  <rect x="123" y="123" width="154" height="154" rx="8"
+        transform="rotate(45 200 200)"
+        fill="none" stroke="url(#grad)" stroke-width="5" opacity="0.45"/>
+
+  <!-- Inner ring -->
+  <rect x="136" y="136" width="128" height="128" rx="7"
+        transform="rotate(45 200 200)"
+        fill="none" stroke="url(#grad)" stroke-width="5" opacity="0.75"/>
+
+  <!-- Filled core diamond -->
+  <rect x="149" y="149" width="102" height="102" rx="6"
+        transform="rotate(45 200 200)"
+        fill="url(#grad)"/>
+
+  <!-- Intercept line -->
+  <line x1="40" y1="200" x2="360" y2="200"
+        stroke="url(#gradLine)" stroke-width="3"/>
+</svg>

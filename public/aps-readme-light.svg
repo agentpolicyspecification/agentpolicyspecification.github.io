@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100" width="500" height="100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+    <linearGradient id="gradLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#93c5fd;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#93c5fd;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#93c5fd;stop-opacity:0"/>
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400&amp;family=Lora:wght@600&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Mark -->
+  <g transform="translate(50,50) scale(0.32)">
+    <rect x="-90" y="-90" width="180" height="180" rx="9" transform="rotate(45)" fill="none" stroke="url(#grad)" stroke-width="5" opacity="0.2"/>
+    <rect x="-77" y="-77" width="154" height="154" rx="8" transform="rotate(45)" fill="none" stroke="url(#grad)" stroke-width="5" opacity="0.45"/>
+    <rect x="-64" y="-64" width="128" height="128" rx="7" transform="rotate(45)" fill="none" stroke="url(#grad)" stroke-width="5" opacity="0.75"/>
+    <rect x="-51" y="-51" width="102" height="102" rx="6" transform="rotate(45)" fill="url(#grad)"/>
+    <line x1="-115" y1="0" x2="115" y2="0" stroke="url(#gradLine)" stroke-width="10"/>
+  </g>
+
+  <text x="100" y="46" font-family="'Lora', serif" font-size="40" font-weight="600" letter-spacing="3" fill="url(#grad)">APS</text>
+  <text x="102" y="66" font-family="'DM Mono', monospace" font-size="10" font-weight="400" letter-spacing="4" fill="#6366f1" opacity="0.65">AGENT POLICY SPECIFICATION</text>
+</svg>

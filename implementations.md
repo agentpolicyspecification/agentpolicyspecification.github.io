@@ -9,7 +9,9 @@ APS reference implementations track the specification draft. APIs may change unt
 ## TypeScript
 
 **Package:** `@agentpolicyspecification/core`
+
 **Repository:** [aps-typescript](https://github.com/agentpolicyspecification/aps-typescript)
+
 **Status:** Pre-release
 
 ### Installation
@@ -53,6 +55,7 @@ See the [repository](https://github.com/agentpolicyspecification/aps-typescript)
 ## Java
 
 **Package:** `io.agentpolicyspecification:aps-core`
+
 **Status:** Planned
 
 ---
