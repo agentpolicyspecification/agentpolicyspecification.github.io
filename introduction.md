@@ -34,6 +34,19 @@ For each interception point, APS defines:
 - **A policy interface** — how policies are declared, composed, and resolved
 - **An enforcement contract** — what actions a compliant runtime must take on a policy decision
 
+## Policy Authoring
+
+APS is extensible by design. The specification defines the interception contract — not the policy language. Any engine that can receive a context and return a decision can back an APS policy.
+
+| Model | How it works |
+|---|---|
+| **Rego (WASM)** | Declarative OPA policies compiled to WebAssembly, evaluated in-process |
+| **OPA (REST)** | Policies evaluated by a running OPA server via its HTTP API |
+| **Runtime** | Typed interfaces in TypeScript or Java for policies requiring imperative logic or I/O |
+| **DSL** | Custom domain-specific languages backed by any evaluator you choose |
+
+New authoring models can be added without changes to the core specification.
+
 ## Status
 
 APS is in the **concept and specification design** phase.

@@ -6,3 +6,62 @@
   height: 48px !important;
   max-height: 48px !important;
 }
+
+/* ─── FAQ accordions ────────────────────────────────────────────────────────── */
+
+details {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  margin: 12px 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+details summary {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 14px 18px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+  transition: background-color 0.2s;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary::before {
+  content: "›";
+  font-size: 1.25rem;
+  line-height: 1;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+  color: var(--vp-c-brand-1);
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+details[open] summary {
+  background-color: var(--vp-c-bg-soft);
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+details > :not(summary) {
+  padding: 14px 18px;
+  margin: 0;
+}
+
+details > p:first-of-type {
+  margin-top: 0;
+}
+
+details > p:last-child,
+details > ul:last-child {
+  margin-bottom: 0;
+}

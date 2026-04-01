@@ -24,8 +24,8 @@ features:
     details: Intercept tool invocations before execution. Enforce allowlists, validate arguments, prevent unsafe operations.
   - title: Output Policy
     details: Evaluate model responses before delivery. Redact sensitive content, block unsafe outputs, audit everything.
-  - title: Rego + Runtime
-    details: Write policies declaratively in Rego (OPA-compatible) or programmatically in TypeScript and Java.
+  - title: Extensible policy authoring
+    details: Write policies in Rego (WASM or REST), as runtime rules in TypeScript/Java, or in any custom DSL — APS defines the contract, not the language.
   - title: Vendor-neutral
     details: Not tied to any agent framework, LLM provider, or cloud platform. Works wherever your agent runs.
   - title: Composable decisions

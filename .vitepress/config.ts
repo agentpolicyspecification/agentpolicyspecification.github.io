@@ -23,6 +23,7 @@ export default withMermaid(defineConfig({
     nav: [
       { text: "Specification", link: "/spec/core" },
       { text: "Implementations", link: "/implementations" },
+      { text: "FAQ", link: "/faq" },
       {
         text: "GitHub",
         link: "https://github.com/agentpolicyspecification",
@@ -35,6 +36,7 @@ export default withMermaid(defineConfig({
         items: [
           { text: "What is APS?", link: "/introduction" },
           { text: "Implementations", link: "/implementations" },
+          { text: "FAQ", link: "/faq" },
         ],
       },
       {
