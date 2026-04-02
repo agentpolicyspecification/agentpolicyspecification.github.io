@@ -1,0 +1,14 @@
+{
+  "packages": {
+    ".": {
+      "release-type": "simple",
+      "changelog-sections": [
+        {"type": "feat", "section": "Added", "hidden": false},
+        {"type": "fix", "section": "Fixed", "hidden": false},
+        {"type": "docs", "section": "Documentation", "hidden": false},
+        {"type": "chore", "section": "Miscellaneous", "hidden": true},
+        {"type": "refactor", "section": "Changed", "hidden": false}
+      ]
+    }
+  }
+}
