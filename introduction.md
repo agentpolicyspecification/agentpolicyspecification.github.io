@@ -2,11 +2,11 @@
 
 **Agent Policy Specification (APS)** is a vendor-neutral standard for enforcing policies on AI agent interactions.
 
-APS defines a standard interception layer that sits between an agent and its underlying LLM. It gives operators, developers, and platform teams a consistent way to express, evaluate, and enforce policies on every message, tool call, and model response — before any side effect occurs.
+APS defines a standard interception layer that sits between an agent and its underlying LLM. It gives operators, developers, and platform teams a consistent way to express, evaluate, and enforce policies on every message, tool call, and model response, before any side effect occurs.
 
 ## The Problem
 
-AI agents act on behalf of users and systems. They call tools, read data, and produce outputs — often with little or no enforcement boundary between an instruction and its consequences.
+AI agents act on behalf of users and systems. They call tools, read data, and produce outputs, often with little or no enforcement boundary between an instruction and its consequences.
 
 Current approaches to safety and control are fragmented: guardrails are baked into individual agent frameworks, applied inconsistently across environments, and difficult to audit or reason about independently from application logic.
 

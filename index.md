@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "Agent Policy Specification"
   text: "Enforce policies on AI agent interactions."
-  tagline: A vendor-neutral standard for intercepting and enforcing policies on every message, tool call, and model response — before any side effect occurs.
+  tagline: A vendor-neutral standard for intercepting and enforcing policies on every message, tool call, and model response, before any side effect occurs.
   image:
     light: /aps-logo-light.svg
     dark: /aps-logo-dark-nobg.svg

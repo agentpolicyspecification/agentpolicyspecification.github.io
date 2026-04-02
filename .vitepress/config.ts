@@ -23,6 +23,20 @@ export default withMermaid(defineConfig({
     nav: [
       { text: "Specification", link: "/spec/core" },
       { text: "Implementations", link: "/implementations" },
+      {
+        text: "SDK",
+        items: [
+          { text: "TypeScript", link: "/sdk/typescript" },
+          {
+            text: "Integrations",
+            items: [
+              { text: "Vercel AI SDK", link: "/sdk/integrations/ai-sdk" },
+              { text: "Mastra", link: "/sdk/integrations/mastra" },
+              { text: "Ollama", link: "/sdk/integrations/ollama" },
+            ],
+          },
+        ],
+      },
       { text: "FAQ", link: "/faq" },
       {
         text: "GitHub",
@@ -48,6 +62,21 @@ export default withMermaid(defineConfig({
           { text: "Output Policy", link: "/spec/output-policy" },
           { text: "Enforcement Contract", link: "/spec/enforcement-contract" },
           { text: "Policy Authoring", link: "/spec/policy-authoring" },
+        ],
+      },
+      {
+        text: "SDK",
+        items: [
+          { text: "TypeScript", link: "/sdk/typescript" },
+          {
+            text: "Integrations",
+            collapsed: false,
+            items: [
+              { text: "Vercel AI SDK", link: "/sdk/integrations/ai-sdk" },
+              { text: "Mastra", link: "/sdk/integrations/mastra" },
+              { text: "Ollama", link: "/sdk/integrations/ollama" },
+            ],
+          },
         ],
       },
       {
