@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Features
 
-* Added BH action to generate changelog ([5d4b7df](https://github.com/agentpolicyspecification/agentpolicyspecification.github.io/commit/5d4b7df8898a7c6017802799a75b201f483e6df7))
+* Added GH action to generate changelog ([5d4b7df](https://github.com/agentpolicyspecification/agentpolicyspecification.github.io/commit/5d4b7df8898a7c6017802799a75b201f483e6df7))
 
 ## [0.1.0] - 2026-04-02
 
