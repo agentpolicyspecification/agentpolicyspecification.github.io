@@ -27,6 +27,7 @@ export default withMermaid(defineConfig({
         text: "SDK",
         items: [
           { text: "TypeScript", link: "/sdk/typescript" },
+          { text: "Java", link: "/sdk/java" },
           {
             text: "Integrations",
             items: [
@@ -51,6 +52,7 @@ export default withMermaid(defineConfig({
         items: [
           { text: "What is APS?", link: "/introduction" },
           { text: "Implementations", link: "/implementations" },
+          { text: "Versioning", link: "/versioning" },
           { text: "FAQ", link: "/faq" },
           { text: "Community", link: "/community" },
         ],
@@ -70,6 +72,7 @@ export default withMermaid(defineConfig({
         text: "SDK",
         items: [
           { text: "TypeScript", link: "/sdk/typescript" },
+          { text: "Java", link: "/sdk/java" },
           {
             text: "Integrations",
             collapsed: false,
