@@ -38,6 +38,7 @@ export default withMermaid(defineConfig({
         ],
       },
       { text: "FAQ", link: "/faq" },
+      { text: "Community", link: "/community" },
       {
         text: "GitHub",
         link: "https://github.com/agentpolicyspecification",
@@ -51,6 +52,7 @@ export default withMermaid(defineConfig({
           { text: "What is APS?", link: "/introduction" },
           { text: "Implementations", link: "/implementations" },
           { text: "FAQ", link: "/faq" },
+          { text: "Community", link: "/community" },
         ],
       },
       {
