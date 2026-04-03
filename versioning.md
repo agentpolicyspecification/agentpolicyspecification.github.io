@@ -36,6 +36,20 @@ Each SDK is versioned independently and declares which specification version it 
 
 SDK release notes document any specification changes included in each release.
 
+## Policy Set Version Declaration
+
+Policy sets declare the APS specification version they target using the `aps_version` field:
+
+```yaml
+aps_version: "0.1.0"
+policies:
+  - ...
+```
+
+This field is required. The APS runtime uses it to validate compatibility between the policy set and the running implementation, and to apply the correct evaluation semantics for that spec version.
+
+If the runtime does not support the declared `aps_version`, it MUST refuse to load the policy set and surface a clear error to the operator.
+
 ## Compatibility
 
 ### What a version number means

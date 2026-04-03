@@ -6,13 +6,20 @@ title: "PolicyDecision Schema"
 
 The result produced by a policy evaluation at any interception point.
 
-**Schema ID:** `https://agentpolicyspecification.github.io/schemas/policy-decision.schema.json`
+**Schema ID:** `https://agentpolicyspecification.github.io/schemas/v0.1.0/policy-decision.schema.json`
 
 ## Decision Types
+
+All non-audit decisions support an optional `audit` flag. When `audit: true` is set alongside another decision, the runtime writes an audit record **and** applies the primary decision. The standalone `audit` decision produces only an audit record (equivalent to `allow` + `audit: true`).
 
 ### `allow`
 
 The interaction proceeds unchanged.
+
+| Property | Type | Required | Description |
+|---|---|---|---|
+| `decision` | `"allow"` | Yes | |
+| `audit` | `boolean` | No | When `true`, an audit record is also produced |
 
 ```json
 { "decision": "allow" }
@@ -27,6 +34,7 @@ The interaction is blocked.
 | `decision` | `"deny"` | Yes | |
 | `reason` | `string` | No | Human-readable explanation. MAY be omitted for security-sensitive denials. |
 | `policy_id` | `string` | No | The policy that produced this denial. |
+| `audit` | `boolean` | No | When `true`, an audit record is also produced |
 
 ```json
 { "decision": "deny", "reason": "Message contains a potential SSN.", "policy_id": "no-ssn" }
@@ -40,6 +48,7 @@ Specific content is removed or masked before the interaction proceeds.
 |---|---|---|---|
 | `decision` | `"redact"` | Yes | |
 | `redactions` | `Redaction[]` | Yes | One or more redaction instructions. |
+| `audit` | `boolean` | No | When `true`, an audit record is also produced |
 
 **Redaction:**
 
@@ -67,6 +76,7 @@ The payload is modified before the interaction proceeds.
 |---|---|---|---|
 | `decision` | `"transform"` | Yes | |
 | `transformation` | `Transformation` | Yes | |
+| `audit` | `boolean` | No | When `true`, an audit record is also produced |
 
 **Transformation operation:**
 
@@ -78,7 +88,7 @@ The payload is modified before the interaction proceeds.
 
 ### `audit`
 
-The interaction proceeds but is logged for review.
+Produces only an audit record; the interaction proceeds unchanged.
 
 | Property | Type | Required | Description |
 |---|---|---|---|
@@ -87,4 +97,4 @@ The interaction proceeds but is logged for review.
 
 ## Download
 
-[policy-decision.schema.json](https://github.com/agentpolicyspecification/spec/blob/main/schemas/policy-decision.schema.json)
+[policy-decision.schema.json](https://github.com/agentpolicyspecification/spec/blob/main/schemas/v0.1.0/policy-decision.schema.json)

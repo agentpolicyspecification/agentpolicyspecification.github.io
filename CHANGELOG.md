@@ -1,3 +1,7 @@
+---
+title: "Changelog"
+---
+
 # Changelog
 
 All notable changes to the APS documentation site will be documented in this file.

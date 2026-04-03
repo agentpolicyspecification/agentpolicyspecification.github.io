@@ -6,7 +6,7 @@ title: "InputContext Schema"
 
 The evaluation input provided to policies at the **Input Interception** point.
 
-**Schema ID:** `https://agentpolicyspecification.github.io/schemas/input-context.schema.json`
+**Schema ID:** `https://agentpolicyspecification.github.io/schemas/v0.1.0/input-context.schema.json`
 
 ## Properties
 
@@ -50,4 +50,4 @@ Additional properties are permitted on `metadata` for runtime-specific extension
 
 ## Download
 
-[input-context.schema.json](https://github.com/agentpolicyspecification/spec/blob/main/schemas/input-context.schema.json)
+[input-context.schema.json](https://github.com/agentpolicyspecification/spec/blob/main/schemas/v0.1.0/input-context.schema.json)

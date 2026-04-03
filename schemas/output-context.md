@@ -6,7 +6,7 @@ title: "OutputContext Schema"
 
 The evaluation input provided to policies at the **Output Interception** point.
 
-**Schema ID:** `https://agentpolicyspecification.github.io/schemas/output-context.schema.json`
+**Schema ID:** `https://agentpolicyspecification.github.io/schemas/v0.1.0/output-context.schema.json`
 
 ## Properties
 
@@ -48,4 +48,4 @@ The evaluation input provided to policies at the **Output Interception** point.
 
 ## Download
 
-[output-context.schema.json](https://github.com/agentpolicyspecification/spec/blob/main/schemas/output-context.schema.json)
+[output-context.schema.json](https://github.com/agentpolicyspecification/spec/blob/main/schemas/v0.1.0/output-context.schema.json)

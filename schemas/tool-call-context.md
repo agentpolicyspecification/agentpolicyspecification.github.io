@@ -6,7 +6,7 @@ title: "ToolCallContext Schema"
 
 The evaluation input provided to policies at the **Tool Call Interception** point.
 
-**Schema ID:** `https://agentpolicyspecification.github.io/schemas/tool-call-context.schema.json`
+**Schema ID:** `https://agentpolicyspecification.github.io/schemas/v0.1.0/tool-call-context.schema.json`
 
 ## Properties
 
@@ -52,4 +52,4 @@ The evaluation input provided to policies at the **Tool Call Interception** poin
 
 ## Download
 
-[tool-call-context.schema.json](https://github.com/agentpolicyspecification/spec/blob/main/schemas/tool-call-context.schema.json)
+[tool-call-context.schema.json](https://github.com/agentpolicyspecification/spec/blob/main/schemas/v0.1.0/tool-call-context.schema.json)

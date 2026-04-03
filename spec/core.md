@@ -55,44 +55,51 @@ Occurs when the LLM produces a response. The APS runtime evaluates the response 
 
 ### 4.1 InputContext
 
-```json
-{
-  "messages": [
-    { "role": "system" | "user" | "assistant", "content": "string" }
-  ],
-  "metadata": {
-    "agent_id": "string",
-    "session_id": "string",
-    "timestamp": "ISO 8601"
-  }
+```typescript
+interface InputContext {
+  messages: Array<{
+    role: "system" | "user" | "assistant";
+    content: string;
+  }>;
+  metadata: {
+    agent_id: string;
+    session_id: string;
+    timestamp: string; // ISO 8601
+  };
 }
 ```
 
 ### 4.2 ToolCallContext
 
-```json
-{
-  "tool_name": "string",
-  "arguments": {},
-  "calling_message": { "role": "assistant", "content": "string" },
-  "metadata": {
-    "agent_id": "string",
-    "session_id": "string",
-    "timestamp": "ISO 8601"
-  }
+```typescript
+interface ToolCallContext {
+  tool_name: string;
+  arguments: Record<string, unknown>;
+  calling_message: {
+    role: "assistant";
+    content: string;
+  };
+  metadata: {
+    agent_id: string;
+    session_id: string;
+    timestamp: string; // ISO 8601
+  };
 }
 ```
 
 ### 4.3 OutputContext
 
-```json
-{
-  "response": { "role": "assistant", "content": "string" },
-  "metadata": {
-    "agent_id": "string",
-    "session_id": "string",
-    "timestamp": "ISO 8601"
-  }
+```typescript
+interface OutputContext {
+  response: {
+    role: "assistant";
+    content: string;
+  };
+  metadata: {
+    agent_id: string;
+    session_id: string;
+    timestamp: string; // ISO 8601
+  };
 }
 ```
 
@@ -106,6 +113,6 @@ Every policy evaluation MUST produce one of the following decisions:
 | `deny` | The interaction is blocked; the agent receives an error or configured fallback |
 | `redact` | Specific content is removed or masked before the interaction proceeds |
 | `transform` | The payload is modified before the interaction proceeds |
-| `audit` | The interaction proceeds, but is logged for review |
+| `audit` | The interaction proceeds unchanged, but is logged for review |
 
-Decisions are not mutually exclusive. A policy MAY produce `audit` alongside any other decision.
+Decisions are not mutually exclusive. A policy MAY produce `audit` alongside any other decision by setting `audit: true` on the decision object. The standalone `audit` decision is equivalent to `allow` with `audit: true`.

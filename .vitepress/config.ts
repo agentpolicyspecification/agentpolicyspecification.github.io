@@ -55,6 +55,7 @@ export default withMermaid(defineConfig({
           { text: "Versioning", link: "/versioning" },
           { text: "FAQ", link: "/faq" },
           { text: "Community", link: "/community" },
+          { text: "Changelog", link: "/CHANGELOG" },
         ],
       },
       {
@@ -91,6 +92,8 @@ export default withMermaid(defineConfig({
           { text: "ToolCallContext", link: "/schemas/tool-call-context" },
           { text: "OutputContext", link: "/schemas/output-context" },
           { text: "PolicyDecision", link: "/schemas/policy-decision" },
+          { text: "DSLPolicy", link: "/schemas/dsl-policy" },
+          { text: "PolicySet", link: "/schemas/policy-set" },
         ],
       },
     ],

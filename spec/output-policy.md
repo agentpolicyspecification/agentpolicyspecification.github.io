@@ -62,7 +62,7 @@ Redact credit card numbers from model output:
 import { OutputPolicy, OutputContext, PolicyDecision } from "@aps/core";
 
 export class RedactCreditCardPolicy implements OutputPolicy {
-  private readonly pattern = /\b(?:\d[ -]?){13,16}\b/g;
+  private readonly pattern = /\b(?:\d[ -]?){13,16}\b/;
 
   evaluate(context: OutputContext): PolicyDecision {
     if (!this.pattern.test(context.response.content)) {
