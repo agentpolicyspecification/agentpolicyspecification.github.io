@@ -67,6 +67,7 @@ export default withMermaid(defineConfig({
           { text: "Output Policy", link: "/spec/output-policy" },
           { text: "Enforcement Contract", link: "/spec/enforcement-contract" },
           { text: "Policy Authoring", link: "/spec/policy-authoring" },
+          { text: "Types & Transports", link: "/spec/types-transports" },
         ],
       },
       {
